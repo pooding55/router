@@ -1,0 +1,13 @@
+{
+    "require": {
+        "psr/http-message": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Horus\\": "src/Horus/"
+        }
+    },
+    "require-dev": {
+        "laminas/laminas-diactoros": "^2.4"
+    }
+}

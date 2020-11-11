@@ -11,44 +11,44 @@ class Router
     /**
      * @var array
      */
-    public static $routesCollection;
+    public static array $routesCollection;
 
     /**
      * @var array
      */
-    public static $currentRoute;
+    public static array $currentRoute;
 
     /**
      * @var string
      */
-    protected static $basePath = '';
+    protected static string $basePath = '';
 
     /**
      * @var array
      */
-    protected static $defaultMiddlewares = [];
+    protected static array $defaultMiddlewares = [];
 
     /**
      * @var array
      */
-    protected static $defaultAfterMiddlewares = [];
+    protected static array $defaultAfterMiddlewares = [];
 
     /**
      * @var string
      */
-    protected static $defaultGroup = '';
+    protected static string $defaultGroup = '';
 
     /**
      * Шаблоны для указания параметров в URL
      * @var array
      */
-    protected static $placeholders = [
-        'i'  => '[0-9]++',
-        'a'  => '[0-9A-Za-z]++',
-        'h'  => '[0-9A-Fa-f]++',
-        '*'  => '.+?',
+    protected static array $placeholders = [
+        'i' => '[0-9]++',
+        'a' => '[0-9A-Za-z]++',
+        'h' => '[0-9A-Fa-f]++',
+        '*' => '.+?',
         '**' => '.++',
-        ''   => '[^/\.]++'
+        '' => '[^/\.]++'
     ];
 
 
